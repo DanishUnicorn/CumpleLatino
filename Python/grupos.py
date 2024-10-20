@@ -14,6 +14,22 @@ def load_guest_list():
         print("File does not exist.")
         return []
 
-# Example usage
+# Check that it reads the file correctly
 guest_list = load_guest_list()
 print(guest_list)
+
+# Create a list of two random groups
+def create_two_random_groups(guest_list):
+    random.shuffle(guest_list)  # Shuffle the guest list randomly
+    mid_index = len(guest_list) // 2  # Find the halfway point
+    grupo_navidad = guest_list[:mid_index]  # First half goes into grupo_navidad
+    grupo_carnaval = guest_list[mid_index:]  # Second half goes into grupo_carnaval
+    return grupo_navidad, grupo_carnaval
+
+# Generate the groups
+grupo_navidad, grupo_carnaval = create_two_random_groups(guest_list)
+
+# Printing the groups
+print(f"Grupo Navidad: {grupo_navidad}")
+print(f"Grupo Carnaval: {grupo_carnaval}")
+
