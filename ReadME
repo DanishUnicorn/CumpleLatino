@@ -1,0 +1,12 @@
+Overview
+This project generates random groups and customized song-bingo plates for a Latin-themed birthday party. The program aims to enhance the party experience by organizing fun and engaging activities.
+
+Features
+- Random Group Generator: Automatically assigns guests into random groups for party activities.
+- Custom Song-Bingo Plates: Generates bingo cards with popular Latin-themed songs to use for a musical bingo game.
+
+Project Structure
+- grupos.py: Script to generate random groups.
+- bingo_gen.py: Script to create customized song-bingo plates.
+- songs_list.txt: List of Latin-themed songs to be used for the bingo game.
+- guests_list.txt: List of party guests for the group generator.
